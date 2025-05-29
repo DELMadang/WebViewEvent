@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="ko">
+<body>
+    <p onclick="handleClick()">눌러주세요</p>
+    <script>
+        function handleClick() {
+            window.chrome.webview.postMessage({ data: '저는 엣지 브라우저입니다', url: window.document.URL });
+        }
+		
+		function messageBox(message) {
+			alert(message);
+		}
+    </script>
+</body>
+</html>
